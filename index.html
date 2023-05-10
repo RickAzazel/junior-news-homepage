@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+	<link rel="stylesheet" href="style.css">
+	<title>Frontend Mentor | News homepage</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<header class="header">
+				<div class="header__inner">
+					<a class="header__logo" href="#">
+						<img src="./assets/images/logo.svg" alt="logo">
+					</a>
+					<div class="header__burger" id="burger">
+						<div class="header__burger-open active">
+							<svg width="40" height="17" xmlns="http://www.w3.org/2000/svg">
+								<g fill="#00001A" fill-rule="evenodd">
+									<path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
+									<path d="M0 0h40v3H0z" />
+								</g>
+							</svg>
+						</div>
+						<div class="header__burger-close">
+							<svg width="32" height="31" xmlns="http://www.w3.org/2000/svg">
+								<g fill="#00001A" fill-rule="evenodd">
+									<path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z" />
+									<path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z" />
+								</g>
+							</svg>
+						</div>
+					</div>
+					<nav class="header__menu">
+						<ul class="header__list">
+							<li>
+								<a class="header__link text" href="#">Home</a>
+							</li>
+							<li>
+								<a class="header__link text" href="#">New</a>
+							</li>
+							<li>
+								<a class="header__link text" href="#">Popular</a>
+							</li>
+							<li>
+								<a class="header__link text" href="#">Trending</a>
+							</li>
+							<li>
+								<a class="header__link text" href="#">Categories</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<main class="main">
+				<section class="popular">
+					<div class="popular__inner">
+						<div class="popular__img">
+							<img src="./assets/images/image-web-3-desktop.jpg" alt="">
+						</div>
+						<div class="popular__content">
+							<h1 class="popular__title">
+								The Bright Future of Web 3.0?
+							</h1>
+							<div class="popular__body">
+								<p class="popular__text text">
+									We dive into the next evolution of the web
+									that claims to put the power of the platforms
+									back into the hands of the people. But is it
+									really fulfilling its promise?
+								</p>
+								<a class="popular__btn" href="#">
+									Read more
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="new">
+					<div class="new__inner">
+						<h2 class="new__title">New</h2>
+						<div class="new__item">
+							<h3 class="new__subtitle">
+								<a class="new__link" href="#">
+									Hydrogen VS Electric Cars
+								</a>
+							</h3>
+							<p class="new__text text">
+								Will hydrogen-fueled cars ever catch up to EVs?
+							</p>
+						</div>
+						<div class="new__item">
+							<h3 class="new__subtitle">
+								<a class="new__link" href="#">
+									The Downsides of AI Artistry
+								</a>
+							</h3>
+							<p class="new__text text">
+								What are the possible adverse effects of
+								on-demand AI image generation?
+							</p>
+						</div>
+						<div class="new__item">
+							<h3 class="new__subtitle">
+								<a class="new__link" href="#">
+									Is VC Funding Drying Up?
+								</a>
+							</h3>
+							<p class="new__text text">
+								Private funding by VC firms is down 50% YOY.
+								We take a look at what that means.
+							</p>
+						</div>
+					</div>
+				</section>
+				<section class="trending">
+					<div class="trending__inner">
+						<div class="trending__item">
+							<div class="trending__img">
+								<img src="./assets/images/image-retro-pcs.jpg" alt="">
+							</div>
+							<div class="trending__content">
+								<div class="trending__numeration">01</div>
+								<h3 class="trending__title">
+									<a class="trending__link" href="#">
+										Reviving Retro PCs
+									</a>
+								</h3>
+								<p class="trending__text text">
+									What happens when old PCs are given
+									modern upgrades?
+								</p>
+							</div>
+						</div>
+						<div class="trending__item">
+							<div class="trending__img">
+								<img src="./assets/images/image-top-laptops.jpg" alt="">
+							</div>
+							<div class="trending__content">
+								<div class="trending__numeration">02</div>
+								<h3 class="trending__title">
+									<a class="trending__link" href="#">
+										Top 10 Laptops of 2022
+									</a>
+								</h3>
+								<p class="trending__text text">
+									Our best picks for various needs and budgets.
+								</p>
+							</div>
+						</div>
+						<div class="trending__item">
+							<div class="trending__img">
+								<img src="./assets/images/image-gaming-growth.jpg" alt="">
+							</div>
+							<div class="trending__content">
+								<div class="trending__numeration">03</div>
+								<h3 class="trending__title">
+									<a class="trending__link" href="#">
+										The Growth of Gaming
+									</a>
+								</h3>
+								<p class="trending__text text">
+									How the pandemic has sparked fresh opportunities.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+	</div>
+	<script src="./script.js"></script>
+</body>
+
+</html>
