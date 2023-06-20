@@ -1,34 +1,40 @@
 const burgerOpen = document.querySelector('.header__burger-open');
 const burgerClose = document.querySelector('.header__burger-close');
-const headerMenu = document.querySelector('.header__menu');
 
+/* ===================== Functions ===================== */
+const burgerMenuAppearance = (command) => {
+	const headerList = document.querySelector('.header__list');
+	const headerMenu = document.querySelector('.header__menu');
+
+	if (command === 'show') {
+		headerMenu.classList.add('active');
+		headerList.classList.add('active');
+		burgerClose.classList.add('active');
+		burgerOpen.classList.remove('active');
+	}
+	else if (command === 'hide') {
+		headerMenu.classList.remove('active');
+		headerList.classList.remove('active');
+		burgerClose.classList.remove('active');
+		burgerOpen.classList.add('active');
+	}
+};
+
+/* ===================== Events ===================== */
 burgerOpen.addEventListener('click', () => {
-	showBurgerMenu();
+	burgerMenuAppearance('show');
 });
 
 burgerClose.addEventListener('click', () => {
-	hideBurgerMenu();
+	burgerMenuAppearance('hide');
 });
 
-headerMenu.addEventListener('click', () => {
-	hideBurgerMenu();
-});
+window.addEventListener('click', (e) => {
+	const headerMenu = document.querySelector('.header__menu');
+
+	if (e.target === headerMenu) {
+		burgerMenuAppearance('hide');
+	}
+})
 
 
-const showBurgerMenu = () => {
-	const headerList = document.querySelector('.header__list');
-
-	headerMenu.classList.add('active');
-	headerList.classList.add('active');
-	burgerClose.classList.add('active');
-	burgerOpen.classList.remove('active');
-};
-
-const hideBurgerMenu = () => {
-	const headerList = document.querySelector('.header__list');
-
-	headerMenu.classList.remove('active');
-	headerList.classList.remove('active');
-	burgerClose.classList.remove('active');
-	burgerOpen.classList.add('active');
-};

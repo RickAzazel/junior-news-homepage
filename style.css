@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
 *,
 ::after,
 ::before {
@@ -16,8 +18,10 @@
 	--popular-btn-bg-color--hover: rgb(0, 0, 26);
 	--new-bg-color: rgb(0, 0, 26);
 	--header-burger-bg-color: rgb(255, 253, 250);
+	--header-menu-bg-color: rgba(0, 0, 0, 0.622);
 
 	/* Font color */
+	--header-link-font-color: white;
 	--header-link-font-color--hover: rgb(241, 94, 80);
 	--text-font-color: rgb(93, 95, 121);
 	--popular-title-font-color: rgb(0, 0, 26);
@@ -97,7 +101,7 @@ body {
 
 .header__link {
 	text-decoration: none;
-	color: white;
+	color: var(--header-link-font-color);
 }
 
 .header__link:hover {
@@ -310,7 +314,7 @@ body {
 		left: 0;
 		height: 100%;
 		width: 100%;
-		background-color: rgba(0, 0, 0, 0.622);
+		background-color: var(--header-menu-bg-color);
 		transform: translateX(100%);
 	}
 
